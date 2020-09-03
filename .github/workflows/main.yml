@@ -42,9 +42,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Run with CI
-      run: |
-        npm outdated
-        npm ci
+      run: npm ci
 
 #    - name: Audit Depends
 #      run: npm audit
